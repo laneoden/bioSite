@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5DC; /* Soft Cream Background */
+}
+
+/* Header Styles */
+header {
+  background-color: #DC143C; /* Crimson Red */
+  padding: 20px;
+}
+
+header h1 {
+  color: #002F6C; /* Navy Blue for Header Text */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #002F6C; /* Navy Blue for Navigation Links */
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a.active {
+  background-color: #8AA29E; /* Sage Green for Active Page */
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #FF4500; /* Sunset Orange Hover Effect */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #F5F5DC; /* Soft Cream Background */
+  color: #002F6C; /* Navy Blue for Footer Text */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Section Styles */
+section {
+  padding: 40px 20px;
+}
+
+h2, h3 {
+  color: #002F6C; /* Navy Blue for Headings */
+}
+

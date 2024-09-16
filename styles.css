@@ -49,12 +49,39 @@ footer {
   padding: 10px;
 }
 
-/* Section Styles */
-section {
-  padding: 40px 20px;
+/* Landing Sections */
+.landing-section {
+  margin: 40px 0;
+  padding: 20px;
 }
 
-h2, h3 {
+.landing-section h2 {
   color: #002F6C; /* Navy Blue for Headings */
+  margin-bottom: 20px;
 }
 
+/* Content Layout */
+.content-layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.left-aligned {
+  margin-right: 20px;
+}
+
+.left-aligned img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.text-content {
+  max-width: 600px;
+}
+
+.text-content p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #808080; /* Soft Gray */
+}

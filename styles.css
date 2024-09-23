@@ -1,28 +1,29 @@
-/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F5F5DC; /* Soft Cream Background */
+  background-color: #F5F5DC;
 }
 
-/* Header Styles */
 header {
-  background-color: #B22222; /* Darker Red Header (Firebrick) */
+  background: linear-gradient(to bottom, #B22222, #8B0000);
   padding: 20px;
-  border-radius: 15px; /* Apply softer edges to the header */
+  border-radius: 15px;
+  margin-bottom: 0;
 }
 
 header h1 {
-  color: white; /* White Text on Dark Red Background */
-  font-size: 36px; /* Larger main heading */
+  color: white;
+  font-size: 36px;
+  margin: 0;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: center; /* Center navigation */
+  justify-content: center;
+  margin: 0;
 }
 
 nav ul li {
@@ -30,68 +31,63 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #002F6C; /* Navy Blue for Navigation Links */
+  color: #002F6C;
   text-decoration: none;
   padding: 5px 10px;
   font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a.active {
-  background-color: #8AA29E; /* Sage Green for Active Page */
+  background-color: #8AA29E;
   color: white;
-  border-radius: 10px; /* Soften the edges for active page */
+  border-radius: 10px;
 }
 
 nav ul li a:hover {
-  color: #FF4500; /* Sunset Orange Hover Effect */
-  text-decoration: underline; /* Add underline on hover */
+  background-color: #8AA29E;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
-/* Footer Styles */
 footer {
-  background-color: #F5F5DC; /* Soft Cream Background */
-  color: #002F6C; /* Navy Blue for Footer Text */
+  background-color: #F5F5DC;
+  color: #002F6C;
   text-align: center;
   padding: 10px;
-  border-radius: 15px; /* Apply softer edges to the footer */
+  border-radius: 15px;
+  margin-top: 20px;
 }
 
-/* Section Styles */
 section {
   padding: 40px 20px;
+  margin-top: 0;
 }
 
-h2, h3 {
-  color: #002F6C; /* Navy Blue for Headings */
-  margin-bottom: 20px;
-  font-size: 28px; /* Larger sub-headings */
-}
-
-/* Card Layout */
 .card {
   background-color: white;
-  border-radius: 15px; /* Softened edges */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-bottom: 20px;
-  overflow: hidden; /* Ensures header bar stays within the card */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   display: flex;
-  flex-direction: column; /* Correct the card structure */
+  flex-direction: column;
 }
 
-/* Red Bar at the Very Top of Each Card */
 .card-header {
-  background-color: #B22222; /* Same red as the header */
-  color: white; /* White text on red background */
+  background: linear-gradient(to bottom, #B22222, #8B0000);
+  color: white;
   padding: 10px;
   font-size: 24px;
   text-align: center;
-  width: 100%; /* Ensure the header spans the entire top */
-  border-top-left-radius: 15px; /* Ensure red curvature at top */
-  border-top-right-radius: 15px; /* Ensure red curvature at top */
-  margin: 0; /* Align it at the top of the card */
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
 }
 
-/* Left-Aligned Image with Right-Aligned Text */
 .content-layout {
   display: flex;
   align-items: flex-start;
@@ -100,8 +96,8 @@ h2, h3 {
 .left-aligned img {
   max-width: 300px;
   height: auto;
-  border-radius: 15px; /* Apply rounded edges */
-  margin-right: 20px; /* Space between image and text */
+  border-radius: 15px;
+  margin-right: 20px;
 }
 
 .text-content {
@@ -111,12 +107,11 @@ h2, h3 {
 .text-content p {
   padding: 20px;
   font-size: 16px;
-  color: #505050; /* Darker Gray Text for Better Readability */
+  color: #505050;
 }
 
-/* Button Styling */
 button {
-  background-color: #8AA29E; /* Sage Green Background */
+  background-color: #8AA29E;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -124,55 +119,50 @@ button {
 }
 
 button:hover {
-  background-color: #002F6C; /* Navy Blue on Hover */
+  background-color: #002F6C;
   color: white;
 }
 
-/* Responsive Design */
-
-/* Adjustments for Tablets (1023px and below) */
 @media (max-width: 1023px) {
   .content-layout {
-    flex-direction: column; /* Stack vertically on tablets */
-    text-align: center; /* Center-align text */
+    flex-direction: column;
+    text-align: center;
   }
 
   .left-aligned img {
-    max-width: 100%; /* Make images responsive */
-    margin-bottom: 20px; /* Add spacing between image and text */
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
   nav ul {
-    justify-content: center; /* Center navigation */
+    justify-content: center;
   }
 
   nav ul li {
-    margin-right: 10px; /* Adjust margin for smaller screens */
+    margin-right: 10px;
   }
 }
 
-/* Adjustments for Mobile Devices (767px and below) */
 @media (max-width: 767px) {
   .content-layout {
-    flex-direction: column; /* Stack content vertically */
-    text-align: center; /* Center the text */
+    flex-direction: column;
+    text-align: center;
   }
 
   .left-aligned img {
-    max-width: 100%; /* Image takes full width on mobile */
-    margin-bottom: 20px; /* Space between image and text */
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
   nav ul {
-    flex-direction: column; /* Stack navigation vertically */
-    align-items: center; /* Center navigation items */
+    flex-direction: column;
+    align-items: center;
   }
 
   nav ul li {
-    margin: 10px 0; /* Add space between navigation items */
+    margin: 10px 0;
   }
 
-  /* Adjust font sizes for mobile */
   h1 {
     font-size: 24px;
   }
@@ -182,10 +172,9 @@ button:hover {
   }
 
   p {
-    font-size: 14px; /* Smaller font for readability on mobile */
+    font-size: 14px;
   }
 
-  /* Reduce padding for sections on mobile */
   section {
     padding: 20px 10px;
   }

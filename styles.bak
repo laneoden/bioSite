@@ -8,21 +8,18 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #B22222; /* Darker Red Header (Firebrick) */
+  background-color: #DC143C; /* Crimson Red */
   padding: 20px;
-  border-radius: 15px; /* Apply softer edges to the header */
 }
 
 header h1 {
-  color: white; /* White Text on Dark Red Background */
-  font-size: 36px; /* Larger main heading */
+  color: #002F6C; /* Navy Blue for Header Text */
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: center; /* Center navigation */
 }
 
 nav ul li {
@@ -33,18 +30,15 @@ nav ul li a {
   color: #002F6C; /* Navy Blue for Navigation Links */
   text-decoration: none;
   padding: 5px 10px;
-  font-size: 16px;
 }
 
 nav ul li a.active {
   background-color: #8AA29E; /* Sage Green for Active Page */
   color: white;
-  border-radius: 10px; /* Soften the edges for active page */
 }
 
 nav ul li a:hover {
   color: #FF4500; /* Sunset Orange Hover Effect */
-  text-decoration: underline; /* Add underline on hover */
 }
 
 /* Footer Styles */
@@ -53,7 +47,6 @@ footer {
   color: #002F6C; /* Navy Blue for Footer Text */
   text-align: center;
   padding: 10px;
-  border-radius: 15px; /* Apply softer edges to the footer */
 }
 
 /* Section Styles */
@@ -64,44 +57,24 @@ section {
 h2, h3 {
   color: #002F6C; /* Navy Blue for Headings */
   margin-bottom: 20px;
-  font-size: 28px; /* Larger sub-headings */
 }
 
-/* Card Layout */
-.card {
-  background-color: white;
-  border-radius: 15px; /* Softened edges */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-bottom: 20px;
-  overflow: hidden; /* Ensures header bar stays within the card */
-  display: flex;
-  flex-direction: column; /* Correct the card structure */
-}
-
-/* Red Bar at the Very Top of Each Card */
-.card-header {
-  background-color: #B22222; /* Same red as the header */
-  color: white; /* White text on red background */
-  padding: 10px;
-  font-size: 24px;
-  text-align: center;
-  width: 100%; /* Ensure the header spans the entire top */
-  border-top-left-radius: 15px; /* Ensure red curvature at top */
-  border-top-right-radius: 15px; /* Ensure red curvature at top */
-  margin: 0; /* Align it at the top of the card */
-}
-
-/* Left-Aligned Image with Right-Aligned Text */
+/* Content Layout for Desktop (Default) */
 .content-layout {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.left-aligned {
+  margin-right: 20px;
 }
 
 .left-aligned img {
   max-width: 300px;
   height: auto;
-  border-radius: 15px; /* Apply rounded edges */
-  margin-right: 20px; /* Space between image and text */
+  border-radius: 5px;
 }
 
 .text-content {
@@ -109,23 +82,9 @@ h2, h3 {
 }
 
 .text-content p {
-  padding: 20px;
+  margin-bottom: 15px;
   font-size: 16px;
-  color: #505050; /* Darker Gray Text for Better Readability */
-}
-
-/* Button Styling */
-button {
-  background-color: #8AA29E; /* Sage Green Background */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #002F6C; /* Navy Blue on Hover */
-  color: white;
+  color: #808080; /* Soft Gray */
 }
 
 /* Responsive Design */

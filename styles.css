@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -81,7 +82,7 @@ section {
   color: white;
   padding: 10px;
   font-size: 24px;
-  text-align: center;
+  text-align: left; /* Left justify the card header text */
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
